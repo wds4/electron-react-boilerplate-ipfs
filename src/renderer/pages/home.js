@@ -3,6 +3,9 @@ import Masthead from './mastheads/mainMasthead.js';
 import * as MiscAppFxns from "./lib/app/misc.ts";
 import * as IpfsFxns from "./lib/ipfs/ipfsHttpClient"
 
+const ipfsConfigImage = require('./img/ipfsConfig.png')
+// import MyImage from path.join(ASSETS_PATH, `ipfsConfig.png`);
+
 const updateMainColWidth = MiscAppFxns.updateMainColWidth;
 
 const isIpfsNodeAvailable = IpfsFxns.isIpfsNodeAvailable;
@@ -55,6 +58,9 @@ export default class Home extends React.Component {
                             <pre>
                             "Access-Control-Allow-Origin": [ "*" ]
                             </pre>
+                            It should look like this in IPFS Desktop: <br/>
+                            <img src={ipfsConfigImage} style={{width:"100%"}} />
+                            <br/>
                             Then restart the IPFS node; then restart this app.
                         </div>
                         <div id="nodeRunning" style={{display:"none"}} >
