@@ -6,7 +6,9 @@ npm install ipfs-http-client
 ```
 I didn't make any changes to the main process. The IPFS node is accessed entirely through the renderer process. See [this file](https://github.com/wds4/electron-react-boilerplate-ipfs/blob/main/src/renderer/pages/lib/ipfs/ipfsHttpClient.ts) for the relevant functions.
 
-The IPFS node must be installed separately by the user and running on the local machine for this to work. The easiest way for the user to do this is to download, install and run [IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/), although there are other ways to do it as well.
+The IPFS node must be installed separately by the user and running on the local machine for this to work. The easiest way for the user to do this is to download, install and run [IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/) (or could be done at the terminal).
+
+I am currently looking for a way to incorporate basic IPFS Desktop functionality into my app so that the user won't necessarily have to do the IPFS installation separately. If you know how to do this, let me know!
 
 ## Install
 
