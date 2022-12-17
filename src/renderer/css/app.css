@@ -51,9 +51,12 @@ div.h4 {
     font-size:18px;
     text-align:center;
 }
-.infoItem {
-    margin-top:15px;
-    font-size:14px;
+.leftCol {
+    display:inline-block;
+    width:100px;
+}
+.rightCol {
+    display:inline-block;
 }
 #root {
     padding:0px;
